@@ -1,0 +1,19 @@
+Page({
+  data:{
+    detail:''
+  },
+  onLoad(options){
+    console.log('详情页接收的id',options)
+    wx.cloud.database().collection("userlist").doc(options.id)
+    .get()
+    .then(res=>{
+      console.log("详情页成功",res)
+      this.setData({
+        detail:res.data
+      })
+    })
+    .catch(res=>{
+      console.log("详情页失败",res)
+    })
+  }
+})

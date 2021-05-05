@@ -1,0 +1,8 @@
+<view>
+  <text>文件详情</text>
+  <view class="divLine"></view>
+  <view>文件名：{{detail.title}}</view>
+  <view>上传者：{{detail.name}}</view>
+  <view>联系电话：{{detail.num}}</view>
+  <view>是否审核：{{detail.result}}</view>
+</view>

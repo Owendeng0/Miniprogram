@@ -1,0 +1,21 @@
+<!--pages/select/select.wxml-->
+<view style="display: flex;justify-content: center;">
+<button class="btn" type="default" size="mini" style="width:180rpx;height:180rpx"bindtap="uploadExcel"><image src="/images/aqf.png" style="width:100rpx;height:100rpx;"mode="widthFix"></image>选择文件</button>
+</view>
+<view class="outside">
+<view class="inside">项目信息填写</view>
+  <view class="inside">
+  项目所属地:<input id="up_input" name="price" placeholder="请输入项目所属地" bindinput ="price1"/>
+  </view>
+  <view class="inside">
+  项目管理人:<input id="up_input" name="tag" placeholder="请输入项目管理人" bindinput ="tag1"/>
+  </view>
+  <view class="inside">
+  项目名称:<input id="up_input" name="num" placeholder="请输入项目名称" bindinput ="num1"/>
+  </view>
+  <view class="inside">
+  联系电话:<input id="up_input" name="title" placeholder="请输入联系电话" bindinput ="title1"/>
+  </view>
+</view>
+  <button class="upload" bindtap="upData">上传并审核</button>
+
