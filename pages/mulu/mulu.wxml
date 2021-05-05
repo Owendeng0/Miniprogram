@@ -1,0 +1,7 @@
+<!--pages/mulu/mulu.wxml-->
+<button bindtap="getData">刷新数据</button>
+<view wx:for="{{datalist}}">
+  <view class="itemRoot" bindtap="goDetail" data-item="{{item}}"> 
+  <view>{{item.title}}</view>
+  </view>
+</view>

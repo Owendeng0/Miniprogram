@@ -1,0 +1,28 @@
+<view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='/images/wx_login.png'></image>
+        </view>
+
+        <view class='content'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+    <view class='imagesize'>
+    <image src="{{src}}" class='in-image' >
+    </image>    
+    </view>
+    <view style="display: flex;justify-content: center;">
+    <button class="btn" type="default" size="mini" style="width:180rpx;"bindtap="upload"><image src="/images/aqf.png" style="width:100rpx;height:100rpx;"mode="widthFix"></image>上传图片</button>
+    <button class="btn" type="default" size="mini" style="width:180rpx;"bindtap="goto2"><image src="/images/aqf.png" style="width:100rpx;height:100rpx;"mode="widthFix"></image>上传文件</button>
+    </view>
+</view>
